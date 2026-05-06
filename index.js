@@ -1,9 +1,7 @@
-//Runs the Server
-//Entrypoint
-
+//Runs the Server Entrypoint
+require('dotenv').config()
+const port = process.env.PORT
 const app = require("./app")
-
-const port = 3000
 
 app.listen(port, () => {
     console.log(`Simple api listening on port ${port}`)

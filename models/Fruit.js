@@ -52,7 +52,7 @@ class Fruit {
     }
     
      delete(){
-        const deletedFruit = fruits.find((fruit) => {fruit.name.toLowerCase() === this.name.toLowerCase()});
+        const deletedFruit = fruits.find(fruit => fruit.name.toLowerCase() === this.name.toLowerCase());
         if (deletedFruit){
             const deletedIndex = fruits.indexOf(deletedFruit);
             fruits.splice(deletedIndex, 1);
