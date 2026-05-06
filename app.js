@@ -3,8 +3,9 @@
 const express = require('express')
 const app = express();
 const fruitsRouter = require("./routes/fruits");
+const cors = require('cors')
 
-
+app.use(cors())
 app.use(express.json())
 app.use('/fruits', fruitsRouter) //calls router for every /fruits endpoint
 
