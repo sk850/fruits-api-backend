@@ -19,6 +19,5 @@ app.listen(port, () => {
 //     res.send(req.param)
 // })
 
-// app.get('/', (req, res) => {
-//     res.send("Hello form the fruits API")
-// })
+app.get('/', (req, res) => {
+   res.send("Hello form the fruits API") })
